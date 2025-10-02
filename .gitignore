@@ -1,0 +1,62 @@
+# =============================================================================
+# DEVELOPMENT SECURITY GROUPS - GIT IGNORE
+# =============================================================================
+# Files to exclude from version control for security and cleanup
+# =============================================================================
+
+# Terraform State Files (should be stored remotely)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform Variable Files with Sensitive Data
+*.auto.tfvars
+secrets.tfvars
+private.tfvars
+
+# Terraform Plan Files
+*.tfplan
+*.tfplan.*
+
+# Terraform Directory
+.terraform/
+.terraform.lock.hcl*
+
+# Crash Log Files
+crash.log
+crash.*.log
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup Files
+*.bak
+*.backup
+*.orig
+
+# Log Files
+*.log
+terraform.log
+
+# Environment Files
+.env
+.env.local
+.env.*.local
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
